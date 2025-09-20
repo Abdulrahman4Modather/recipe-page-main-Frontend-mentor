@@ -1,0 +1,193 @@
+@font-face {
+    font-family: youngserif;
+    src: url("assets/fonts/young-serif/YoungSerif-Regular.ttf");
+
+    font-family: outfit;
+    src: url("assets/fonts/outfit/Outfit-VariableFont_wght.ttf");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: outfit, serif;
+    font-size: 18px;
+    background-color: #f3e5d8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.container {
+    margin: 4rem auto 0;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+    max-width: 900px;
+}
+
+/* header */
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.header_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.header_title {
+    font-family: youngserif, serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2f2e2c;
+}
+
+.header_description {
+    color: #5a514d;
+}
+
+.preperation {
+    background-color: #fff7fc;
+    padding: 1rem;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.preperation_title {
+    color: #883054;
+}
+
+.preperation_info {
+    padding-left: 1.5rem;
+}
+
+.preperation_info-item {
+    color: #883054;
+    margin-bottom: 0.5rem;
+}
+
+.preperation_info-item p {
+    margin-left: 0.5rem;
+    color: #5a514d;
+}
+
+/* ingredients */
+.section_title {
+    font-family: youngserif, serif;
+    font-size: 2rem;
+    color: #844631;
+}
+
+.ingredients_list {
+    padding-left: 1.5rem;
+}
+
+.ingredients_list-item {
+    color: #844631;
+    margin-bottom: 1rem;
+}
+
+.ingredients_list-item p {
+    margin-left: 0.5rem;
+    color: #5a514d;
+}
+
+.section:nth-child(2),
+.section:nth-child(3) {
+    border-bottom: 1px solid rgb(200, 200, 200);
+    padding-bottom: 1rem;
+}
+
+/* instructions */
+.instructions_list {
+    padding-left: 1.5rem;
+}
+
+.instructions_list-item {
+    color: #844631;
+    margin-bottom: 1rem;
+}
+
+.instructions_list-item p {
+    margin-left: 0.5rem;
+    color: #5a514d;
+    line-height: 1.5rem;
+}
+
+/* nutrition */
+.section_description {
+    color: #5a514d;
+}
+
+.nutrition_table {
+    border-collapse: collapse;
+}
+
+.table_row:nth-child(2),
+.table_row:nth-child(3),
+.table_row:nth-child(4) {
+    border-top: 1px solid rgb(200, 200, 200);
+}
+
+.table_data {
+    padding: 0.75rem;
+}
+
+.table_data-title {
+    color: #5a514d;
+    padding-left: 1rem;
+}
+
+.table_data-value {
+    color: #844631;
+    font-weight: bold;
+}
+
+/* mobile design */
+@media screen and (max-width: 768px) {
+    body {
+        background-color: #fff;
+    }
+
+    .container {
+        margin:  0;
+        padding: 0;
+        border-radius: 0;
+    }
+
+    .section {
+        padding: 0 2rem;
+    }
+
+    .section-header {
+        padding: 0;
+    }
+
+    .section-header .header_title,
+    .section-header .header_description,
+    .section-header .preperation {
+        margin: 0 2rem;
+    }
+
+    .header_image {
+        border-radius: 0;
+    }
+}
